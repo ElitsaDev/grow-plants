@@ -1,11 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap');
 
-
 /*create variable in css with double dash in root tree*/
 :root{
   /*Theme color www.colors.co*/
-  
+
   --text-gray: #3f4954;
   --text-light: #686666da;
   --bg-color: #0f0f0f;
@@ -23,13 +22,12 @@
       --Josefin: 'Josefin', cursive;
       --Lexend: 'Lexend', cursive;
       --Livic: 'Livic', cursive;
-  
   }
-
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -206,6 +204,69 @@ input {
   max-width: 100%;
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/*Weather*/
+.weather-card {
+  align-items: center;
+  margin: auto;
+}
+.weather-icon{
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 28px;
+
+}
+/*
 @media (min-width:576px) {
   .container-medium {
     max-width: 540px;
@@ -364,3 +425,4 @@ input {
 .nav .social i:hover{
   color: #a1c4cf;
 }
+*/

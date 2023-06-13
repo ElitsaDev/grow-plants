@@ -1,9 +1,14 @@
+
 export default function NavBar() {
     return (
-    <nav className="nav">
+    <nav className="navbar">
+        <div className="logo">logo</div>
         <ul className="nav-items">
             <li className="nav-link">
-                <a href="#">Начало</a>
+                <a href="weather.html">Начало</a>
+            </li>
+            <li className="nav-link">
+                <a href="#">Времето</a>
             </li>
             <li className="nav-link">
                 <a href="#">Градина</a>
